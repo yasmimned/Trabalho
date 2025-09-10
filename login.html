@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <ul class="menu">
+        <a href="index.html">
+            <li>🏠︎ Home</li>
+        </a>
+        <a href="login.html">
+            <li>⎘ Login</li>
+        </a>
+        <a href="generos.html">
+            <li>⏭︎ Gêneros</li>
+        </a>
+        <a href="perfil.html">
+            <li>✉ Perfil</li>
+        </a>
+    </ul>
+
+    <div class="container2">
+        <label for="usuario">Nome do usuário/conta:</label><br>
+        <input type="text" id="usuario" name="usuario" value=""><br>
+        <br>
+        <label for="senha">Senha:</label><br>
+        <input type="text" id="senha" name="senha" value=""><br><br>
+        <button type="button" onclick="Validar()">Entrar</button>
+        <button type="Esqueci minha senha">Esqueci minha senha</button>
+        <button type="Criar conta">Criar conta</button>
+        <form action="/action_page.php" autocomplete="on"></form>
+        <form action="/action_page.php" novalidate>
+
+  <script>
+    function Validar(){
+        const username = document.getElementById("usuario").value;
+        const password = document.getElementById("senha").value;
+
+        const usuarioValido = "Cinthia";
+        const senhaValida = "12345";
+
+        if(username== usuarioValido && password === senhaValida){
+            window.location.href = "perfil.html";
+        } else {
+            alert("Usuário ou senha inválidos");
+      }
+    }
+  </script>
+</div>
+</body>
+</html>
